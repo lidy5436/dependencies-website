@@ -5,19 +5,20 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.lidy5436</groupId>
-    <artifactId>dependencies-website</artifactId>
+    <artifactId>website-core</artifactId>
     <version>0.0.1</version>
 
     <name>${project.groupId}:${project.artifactId}</name>
 
     <description>
-        李东阳的常用工具
+        website code
     </description>
 
     <url>https://github.com/lidy5436/dependencies-website</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <lombok.version>1.18.24</lombok.version>
     </properties>
 
     <licenses>
@@ -40,6 +41,16 @@
         <connection>scm:git:git@github.com:lidy5436/dependencies-website.git</connection>
         <developerConnection>scm:git:git@github.com:lidy5436/dependencies-website.git</developerConnection>
     </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+
+    </dependencies>
+
 
     <distributionManagement>
         <snapshotRepository>
